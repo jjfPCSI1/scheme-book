@@ -81,7 +81,7 @@ assq-set! <alist> <key> <value>
 
 otherwise you may have to use `assv-set!` or `assoc-set!` and - again -
 familiarize yourself with the different levels of equality in Scheme.  (Again:
-please not the different order of arguments as compared to `acons`.)
+please note the different order of arguments as compared to `acons`.)
 
 The procedure first checks if the alist already contains an entry with the given
 key.  If it does it replaces the value for that key, so the original alist is
@@ -149,4 +149,4 @@ guile> bool-alist
 ((color 1.0 0.0 0.0) (debug . #t) (subdivide . #t) (use-color . #f))
 ```
 
-Please not that *this time* the procedure *does* modify the alist directly.
+Please note that *this time* the procedure *does* modify the alist directly.
