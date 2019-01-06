@@ -71,7 +71,7 @@ procedures accepting a single argument, i.e. “predicates”.  Although there a
 other procedures that match this requirement it is rarely useful to use them in
 a `filter` expression.  When interested in things like “all list elements that
 are numbers greater than 7” or “all list elements are pairs of numbers where the
-`cdr` is greater than the `cdr`” you will want to use custom procedures, which
+`cdr` is greater than the `car`” you will want to use custom procedures, which
 you'll learn to write in [Defining Procedures](../scheme/procedures/index.html).
 
 #### delete and delete-duplicates
@@ -86,8 +86,8 @@ guile>(delete 3 '(1 2 3 4 5 4 3 2))
 (1 2 4 5 4 2)
 ```
 
-The resulting list is the original list with all elements deleted that are
-“equal” to `3`.
+The resulting list is a copy of the original list with all elements deleted 
+that are “equal” to `3`.
 
 `delete` has its companion procedures `delq` and `delv` which use `eq?` and
 `eqv?` as comparison predicate.
