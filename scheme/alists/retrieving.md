@@ -71,7 +71,7 @@ guile> (assq-ref bool-alist 'use-colors)
 
 Both invocations return `#f`, but only in one case this refers to the actual
 *value* of the entry, while in the other it is the result of the key not being
-present.
+present (note the `s` at the end of `use-colors`).
 
 Please don't think this is only used to catch typing errors - as this example
 might suggest.  It is very common to process alists where it is not known which
@@ -90,7 +90,8 @@ guile> (cdr (assq 'subdivide bool-alist))
 ```
 
 The pair with `#f` as its `cdr` indicates an actual *false* value while the
-plain `#f` refers to a missing key.  Unpacking the `cdr` of the result is a
+plain `#f` refers to a missing key (note the `s` at the end of `use-colors`).  
+Unpacking the `cdr` of the result is a
 minor hassle, but there still is an issue that you can't handle at the moment:
 when the return value is `#f` (i.e. the key is not present) you can't extract
 the `cdr` from that (just try out `(cdr #f)`).  In order to properly handle the
