@@ -50,7 +50,7 @@ you can always access the actual Scheme value using the `#` hash sign:
 
 ## Special Scope in Scheme Modules
 
-As said earlier ariables defined in *LilyPond* files this way are *globally*
+As said earlier variables defined in *LilyPond* files this way are *globally*
 visible also from or in included files.  However, defined in *Scheme* modules
 there are different rules of visibility or “scope”.  For now you are far from
 writing Scheme modules, so I'm only mentioning the fact.
